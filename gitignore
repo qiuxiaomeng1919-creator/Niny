@@ -1,0 +1,25 @@
+# The page embeds its own resized copies of every image, so none of the
+# source files need to be committed. These rules only matter if you copy
+# the working folder in here; the site itself is just index.html.
+
+# Source photograph folders (~115 MB of full resolution originals)
+boxing/
+live music event/
+
+# Source photographs, logos and figures
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.svg
+
+# Scratch folders used while building the page
+_web/
+_prev/
+_assets/
+
+# Editor, tooling and OS noise
+.claude/
+launch.json
+.DS_Store
+Thumbs.db
