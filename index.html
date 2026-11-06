@@ -246,9 +246,9 @@ a{color:inherit;}
 .portrait{
   grid-column:2;grid-row:1;justify-self:end;align-self:start;
   position:relative;z-index:3;
-  width:clamp(6.5rem,11vw,9rem);
+  width:clamp(7.75rem,13vw,10.75rem);
   background:var(--card);border:1px solid var(--rule);
-  padding:0.4rem 0.4rem 1.35rem;
+  padding:0.45rem 0.45rem 1.5rem;
   box-shadow:var(--slip-shadow);
   transform:rotate(2.4deg);
 }
@@ -667,7 +667,7 @@ h3.entry-title{margin:0;font-size:inherit;font-weight:inherit;}
   .wallet-body{grid-template-columns:1fr;grid-template-rows:auto auto auto;gap:2rem;}
   .wallet-body{grid-template-rows:auto auto auto auto;}
   .wallet-left,.cat-card,.slip,.portrait{grid-column:1;}
-  .portrait{grid-row:2;justify-self:start;width:8rem;}
+  .portrait{grid-row:2;justify-self:start;width:9.5rem;}
   .cat-card{grid-row:3;justify-self:stretch;}
   .slip{grid-row:4;justify-self:stretch;max-width:none;margin-left:0;}
   /* the hand-set angles read as sloppy once things are stacked edge to edge */
@@ -864,7 +864,7 @@ h3.entry-title{margin:0;font-size:inherit;font-weight:inherit;}
 <main class="wrap">
 
   <div class="intro-block">
-    <p class="intro">I finished an MEng at Imperial College London in 2026. Since then my work has divided fairly evenly between the lab and the spreadsheet: predicting the mechanical behaviour of additively manufactured steel from processing data, and valuing high technology companies from their fundamentals. Both rest on the same discipline of building models from data that has been cleaned honestly, then stating precisely where those models stop being reliable.</p>
+    <p class="intro">I graduated from Imperial College London in 2026 with an MEng in Materials Science and Engineering. My background has taken me from hands on engineering projects and experimental materials research to applying machine learning to understand the mechanical behaviour of additively manufactured metals. Beyond the lab, I&rsquo;ve also explored the wider technology landscape through investment research, evaluating high tech companies and emerging technologies. These experiences have shaped my curiosity about how things work, how ideas develop and how they translate into real world applications. Outside of work, I enjoy photography, particularly capturing live music and the moments surrounding it.</p>
     <p class="meta">
       <span>MEng Materials Science and Engineering</span>
       <span>First Class Honours, 73.21</span>
@@ -1605,6 +1605,7 @@ h3.entry-title{margin:0;font-size:inherit;font-weight:inherit;}
   apply();
 
   /* ---------- photographs ---------- */
+  // (GoatCounter is loaded at the end of the file, outside this closure)
   var lb = document.getElementById("lightbox");
   var lbImg = document.getElementById("lbImg");
   var lbRoll = document.getElementById("lbRoll");
@@ -1758,3 +1759,8 @@ h3.entry-title{margin:0;font-size:inherit;font-weight:inherit;}
   });
 })();
 </script>
+
+<!-- Visitor counting: cookieless, no personal data. Only reports from the live
+     GitHub Pages site; the Claude artifact blocks third-party scripts. -->
+<script data-goatcounter="https://xiaomeng.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
